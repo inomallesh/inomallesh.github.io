@@ -1,104 +1,67 @@
-# Personal Portfolio Website
+# Maripalli Mallesh — Modern Portfolio Website
 
-A modern, responsive portfolio website built with HTML, CSS, and JavaScript for a 2nd-year B.Tech student.
+A high-performance, responsive portfolio website built with modern HTML5, CSS3, and JavaScript, designed to showcase real-world projects in **Computer Vision**, **Artificial Intelligence**, **Physics & Kinematics Simulators**, and **Full-Stack Web Engineering**.
 
-## Features
-
-- **Modern Dark Theme**: Professional dark color scheme with blue accents
-- **Fully Responsive**: Works perfectly on desktop, tablet, and mobile devices
-- **Smooth Animations**: Scroll animations, hover effects, and transitions
-- **Interactive Navigation**: Sticky navbar with active section highlighting
-- **Contact Form**: Functional contact form with validation
-- **Scroll to Top**: Smooth scroll-to-top button
-- **Mobile Menu**: Hamburger menu for mobile devices
-
-## Sections
-
-1. **Hero Section**: Introduction with call-to-action buttons
-2. **About Section**: Personal information and profile photo
-3. **Skills Section**: Technical skills displayed in cards
-4. **Projects Section**: Portfolio projects with GitHub links
-5. **Contact Section**: Contact form and social media links
-6. **Footer**: Copyright and navigation links
-
-## Customization Guide
-
-### Personal Information
-1. **Name**: Replace "Your Name" in the HTML file
-2. **College**: Update the college name in the About section
-3. **Email**: Replace "your.email@example.com" with your actual email
-4. **Social Links**: Update LinkedIn and GitHub URLs in the Contact section
-
-### Profile Photo
-- Replace the Font Awesome user icon with your actual profile photo
-- Update the `.profile-photo` and `.hero-avatar` classes in CSS
-- Recommended size: 300x300px for hero, 250x250px for about section
-
-### Skills
-- Add or remove skill cards in the Skills section
-- Update icons using Font Awesome classes
-- Modify descriptions as needed
-
-### Projects
-- Replace the sample projects with your actual projects
-- Update project titles, descriptions, and GitHub links
-- Add or remove projects as needed
-
-### Resume
-- Add your actual resume file and update the download link
-- Currently shows a placeholder message
-
-### Colors and Styling
-- Primary color: `#00d4ff` (blue)
-- Background: `#0a0a0a` (dark)
-- Text: `#e0e0e0` (light gray)
-- Modify colors in the CSS file as needed
-
-## File Structure
-
-```
-portfolio/
-├── index.html          # Main HTML file
-├── style.css           # CSS styles
-├── script.js           # JavaScript functionality
-└── README.md           # This file
-```
-
-## Browser Support
-
-- Chrome (recommended)
-- Firefox
-- Safari
-- Edge
-- Mobile browsers
-
-## Getting Started
-
-1. Download all files to a folder
-2. Open `index.html` in a web browser
-3. Customize the content as needed
-4. Upload to a web hosting service
-
-## Tips for Customization
-
-1. **Images**: Use high-quality images for better visual appeal
-2. **Content**: Keep descriptions concise and engaging
-3. **Projects**: Include your best projects with clear descriptions
-4. **Contact**: Make sure all contact information is correct
-5. **Testing**: Test on different devices and browsers
-
-## Future Enhancements
-
-- Add a blog section
-- Include testimonials
-- Add more interactive animations
-- Implement a dark/light theme toggle
-- Add project filtering functionality
-
-## Support
-
-If you need help customizing the portfolio, feel free to modify the code according to your needs. The code is well-commented and easy to understand.
+**Live Site**: [inomallesh.github.io](https://inomallesh.github.io)
 
 ---
 
-**Note**: Remember to replace all placeholder content with your actual information before publishing your portfolio!
+## 🚀 Key Features & Highlights
+
+1. **Brand Identity & Modern Aesthetics**:
+   - Electric Cyan & Obsidian design system with ambient background glows.
+   - Glassmorphic translucent cards (`backdrop-filter: blur(16px)`).
+   - Dynamic role typewriter rotator in the Hero section.
+   - Profile card with real-time status indicator and floating badges.
+
+2. **Accurate Project Showcase (12 Repositories)**:
+   - Filterable tabs: `All Projects`, `AI & Vision`, `Simulations & Robotics`, `Web & Full-Stack`, `Core CS`.
+   - Projects linked to official repositories:
+     - **AgenticAI**: Autonomous AI reasoning loops and tool execution.
+     - **Nokia Snake Gesture Control**: Real-time touchless webcam control using MediaPipe & OpenCV.
+     - **Drone Flight Simulator**: 6-DOF physics quadcopter simulation with live telemetry HUD.
+     - **Autonomous Car Simulator**: Kinematics engine with raycast sensor visualization.
+     - **Hand Tracking Landmark Engine**: 21-landmark 3D hand tracking framework.
+     - **Breed Detection**: Deep learning convolutional image classification.
+     - **Spidercam Kinematic System**: Multi-cable tension and trajectory kinematics.
+     - **Edusphere**: Gamified learning modules and progress metrics.
+     - **AlgoVerse**: Algorithm visualizer with Web Audio API sound synthesis.
+     - **Online Banking Core**: Secure authentication and ledger workflows.
+     - **Home Automation IoT Suite**: Appliance dashboard and microcontroller controller.
+     - **Data Structures & OOPs Repository**: Foundational C, Java, and Python implementations.
+
+3. **Interactive Developer CLI Sandbox**:
+   - Live in-browser terminal emulator supporting commands like `help`, `whoami`, `projects`, `skills`, `simulations`, `vision`, `github`, `contact`, and `clear`.
+
+4. **Curriculum Vitae / Resume Viewer**:
+   - Interactive pop-up CV modal with built-in "Print / Save as PDF" optimized stylesheet.
+
+5. **Direct Connect & Contact System**:
+   - One-click copy email button with instant toast notification.
+   - Validated contact form with direct mail client integration.
+
+6. **Full Theme & Accessibility Support**:
+   - Dark mode & Light mode switcher with `localStorage` memory.
+   - Accessible keyboard navigation and semantic HTML5 tags.
+   - Responsive design tested on mobile, tablet, and desktop viewports.
+
+---
+
+## 📁 File Structure
+
+```text
+├── index.html       # Primary semantic HTML5 layout & modal templates
+├── style.css        # CSS variables, glassmorphism, responsive grid & print stylesheet
+├── script.js        # Terminal sandbox, filter logic, theme toggle & toast engine
+├── Profile.jpg      # High-resolution profile avatar
+├── icon.ico         # Custom site favicon
+└── algoverse/       # Interactive Algorithm Lab project subfolder
+```
+
+---
+
+## 🌐 Deploying to GitHub Pages
+
+To update your live portfolio at `https://inomallesh.github.io`:
+1. Push or upload `index.html`, `style.css`, `script.js`, and `Profile.jpg` to the root of your [`inomallesh/inomallesh.github.io`](https://github.com/inomallesh/inomallesh.github.io) repository.
+2. Ensure GitHub Pages is enabled under **Settings > Pages** with the branch set to `main` and root `/`.

@@ -1,326 +1,1248 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MARIPALLI MALLESH</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Maripalli Mallesh — AI Engineer & Full-Stack Developer</title>
+  <meta name="description" content="Portfolio of Maripalli Mallesh: B.Tech student specializing in Computer Vision, Artificial Intelligence, Robotics Simulators, and Full-Stack Web Development.">
+  <meta name="keywords" content="Maripalli Mallesh, inomallesh, Computer Vision, AI, Python, MediaPipe, OpenCV, Robotics Simulator, Web Development, Portfolio">
+  <meta name="author" content="Maripalli Mallesh">
+
+  <!-- Open Graph / Meta -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://inomallesh.github.io/">
+  <meta property="og:title" content="Maripalli Mallesh — Portfolio">
+  <meta property="og:description" content="AI, Computer Vision, Interactive Simulators & Full-Stack Web Engineering.">
+  <meta property="og:image" content="Profile.jpg">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="icon.ico">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="nav-container">
-            <div class="nav-logo">
-                <a href="#home">Portfolio</a>
-            </div>
-            <ul class="nav-menu">
-                <li class="nav-item">
-                    <a href="#home" class="nav-link">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#about" class="nav-link">About</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#skills" class="nav-link">Skills</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#projects" class="nav-link">Projects</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#contact" class="nav-link">Contact</a>
-                </li>
-            </ul>
-            <div class="hamburger">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
-        </div>
-    </nav>
+  <!-- Ambient background glow elements -->
+  <div class="ambient-glow glow-top"></div>
+  <div class="ambient-glow glow-bottom"></div>
 
+  <!-- Custom Cursor Glow -->
+  <div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
+
+  <!-- Header / Navigation -->
+  <header class="navbar-wrapper">
+    <nav class="navbar" aria-label="Main Navigation">
+      <div class="nav-brand">
+        <a href="#hero" class="brand-link">
+          <span class="brand-avatar">MM</span>
+          <div class="brand-info">
+            <span class="brand-name">Maripalli Mallesh</span>
+            <span class="brand-badge">@inomallesh</span>
+          </div>
+        </a>
+      </div>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#focus" class="nav-link">Focus</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#terminal" class="nav-link">Interactive Terminal</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button id="themeToggle" class="btn-icon" aria-label="Toggle Color Theme" title="Toggle Light/Dark Theme">
+          <i class="fas fa-moon" id="themeIcon"></i>
+        </button>
+        <a href="#contact" class="btn btn-sm btn-glow hide-mobile">
+          <span>Let's Talk</span>
+          <i class="fas fa-arrow-right"></i>
+        </a>
+        <button class="hamburger" id="hamburgerBtn" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
     <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="hero-container">
-            <div class="hero-content">
-                <h1 class="hero-title">
-                    Hi, I'm <span class="highlight">MARIPALLI MALLESH</span>
-                </h1>
-                <p class="hero-subtitle">
-                    A 2nd-year B.Tech student passionate about web development and AI
-                </p>
-                <p class="hero-description">
-                    I love creating innovative solutions and exploring the intersection of technology and creativity.
-                </p>
-                <div class="hero-buttons">
-                    <a href="#contact" class="btn btn-primary">Get In Touch</a>
-                    <a href="#" class="btn btn-secondary" id="downloadResume">
-                        <i class="fas fa-download"></i> Download Resume
-                    </a>
-                </div>
+    <section id="hero" class="hero-section">
+      <div class="container hero-container">
+        <div class="hero-content">
+          <div class="status-pill">
+            <span class="status-dot"></span>
+            <span>Open to AI & Software Internships & Collabs</span>
+          </div>
+
+          <h1 class="hero-title">
+            Hi, I'm <span class="gradient-text">Maripalli Mallesh</span>
+          </h1>
+
+          <div class="hero-tagline-wrap">
+            <span class="tagline-prefix">Specializing in</span>
+            <span class="dynamic-tagline" id="dynamicTagline">Autonomous AI Systems</span>
+            <span class="type-cursor">|</span>
+          </div>
+
+          <p class="hero-desc">
+            B.Tech Computer Science student passionate about developing real-time Computer Vision pipelines, 
+            interactive physics & kinematics simulators, autonomous agent architectures, and responsive web platforms.
+          </p>
+
+          <div class="hero-stats">
+            <div class="stat-item">
+              <span class="stat-number">23+</span>
+              <span class="stat-label">GitHub Repos</span>
             </div>
-            <div class="hero-image">
-                <div class="hero-avatar">
-                    <img src="https://raw.githubusercontent.com/inomallesh/Portfolio/main/Profile.jpg" alt="MARIPALLI MALLESH" class="profile-img">
-                </div>
+            <div class="stat-separator"></div>
+            <div class="stat-item">
+              <span class="stat-number">6+</span>
+              <span class="stat-label">AI & CV Projects</span>
             </div>
+            <div class="stat-separator"></div>
+            <div class="stat-item">
+              <span class="stat-number">4+</span>
+              <span class="stat-label">Kinematic Simulators</span>
+            </div>
+          </div>
+
+          <div class="hero-cta-group">
+            <a href="#projects" class="btn btn-primary">
+              <span>View Projects</span>
+              <i class="fas fa-arrow-down"></i>
+            </a>
+            <a href="https://github.com/inomallesh" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+              <i class="fab fa-github"></i>
+              <span>GitHub</span>
+            </a>
+            <button id="resumeModalBtn" class="btn btn-secondary">
+              <i class="fas fa-file-invoice"></i>
+              <span>View Resume</span>
+            </button>
+          </div>
         </div>
-        <div class="scroll-indicator">
-            <div class="scroll-arrow"></div>
+
+        <div class="hero-visual">
+          <div class="avatar-card-wrapper">
+            <div class="avatar-backdrop-glow"></div>
+            <div class="avatar-card">
+              <div class="avatar-header">
+                <span class="mac-dot red"></span>
+                <span class="mac-dot yellow"></span>
+                <span class="mac-dot green"></span>
+                <span class="card-title-text">mallesh@developer:~</span>
+              </div>
+              <div class="avatar-img-container">
+                <img src="Profile.jpg" alt="Maripalli Mallesh profile photo" class="avatar-img" onerror="this.src='https://raw.githubusercontent.com/inomallesh/inomallesh.github.io/main/Profile.jpg'">
+                <div class="avatar-online-badge">
+                  <i class="fas fa-code"></i>
+                </div>
+              </div>
+              <div class="avatar-caption">
+                <h3>Maripalli Mallesh</h3>
+                <p>AI / CV & Systems Explorer</p>
+                <div class="avatar-tags">
+                  <span class="mini-tag">Python</span>
+                  <span class="mini-tag">OpenCV</span>
+                  <span class="mini-tag">MediaPipe</span>
+                  <span class="mini-tag">Robotics</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Floating Badges -->
+            <div class="floating-badge badge-top-left">
+              <i class="fas fa-eye text-cyan"></i>
+              <span>Hand Tracking & Gestures</span>
+            </div>
+            <div class="floating-badge badge-bottom-right">
+              <i class="fas fa-robot text-purple"></i>
+              <span>Agentic AI Workflows</span>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- About Section -->
-    <section id="about" class="about">
-        <div class="container">
-            <h2 class="section-title">About Me</h2>
-            <div class="about-content">
-                <div class="about-image">
-                    <div class="profile-photo">
-                        <img src="https://raw.githubusercontent.com/Maripalli-Mallesh/Portfolio/main/Profile.jpg" alt="MARIPALLI MALLESH" class="profile-img">
-                    </div>
-                </div>
-                <div class="about-text">
-                    <p>
-                        I'm a passionate 2nd-year B.Tech student at [Your College Name], pursuing Computer Science Engineering. 
-                        My journey in technology began with curiosity about how things work, and it has evolved into a deep 
-                        love for creating digital solutions.
-                    </p>
-                    <p>
-                        I'm particularly interested in web development, artificial intelligence, and software engineering. 
-                        When I'm not coding, you can find me exploring new technologies, contributing to open-source projects, 
-                        or working on personal projects that challenge me to learn and grow.
-                    </p>
-                    <p>
-                        My goal is to become a full-stack developer and contribute to meaningful projects that make a 
-                        positive impact on people's lives.
-                    </p>
-                </div>
-            </div>
+    <section id="about" class="section about-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-kicker">01 / Background</span>
+          <h2 class="section-title">Bridging Theory & Intelligent Machines</h2>
+          <p class="section-subtitle">A glimpse into my engineering mindset, problem-solving journey, and technical foundations.</p>
         </div>
+
+        <div class="about-grid">
+          <div class="about-text-col">
+            <div class="glass-card about-card">
+              <h3 class="card-heading">
+                <i class="fas fa-user-graduate text-cyan"></i>
+                Who I Am
+              </h3>
+              <p>
+                I am a 2nd-year B.Tech student with a relentless drive for building systems that interact with the physical world.
+                From real-time gesture recognition algorithms to autonomous drone and vehicle physics simulations, I thrive at the
+                intersection of code, math, and intelligent behavior.
+              </p>
+              <p>
+                My focus spans <strong>Computer Vision with MediaPipe & OpenCV</strong>, deep learning classification pipelines, 
+                <strong>Agentic AI architectures</strong>, and full-stack software development. I actively build public, open-source 
+                software exploring both frontend mechanics and backend computational logic.
+              </p>
+
+              <div class="about-highlights">
+                <div class="highlight-box">
+                  <i class="fas fa-brain"></i>
+                  <div>
+                    <h4>Computer Vision & AI</h4>
+                    <p>Real-time landmark tracking, facial and gesture analysis, and breed classification.</p>
+                  </div>
+                </div>
+                <div class="highlight-box">
+                  <i class="fas fa-gamepad"></i>
+                  <div>
+                    <h4>Interactive Simulators</h4>
+                    <p>Physics-driven 2D/3D quadcopter, vehicle kinematics, and cable robotics models.</p>
+                  </div>
+                </div>
+                <div class="highlight-box">
+                  <i class="fas fa-layer-group"></i>
+                  <div>
+                    <h4>Modern Web Architecture</h4>
+                    <p>Responsive, clean SPAs, APIs, gamified platforms (Edusphere), and real-time utilities.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-stats-col">
+            <div class="glass-card info-card">
+              <h3 class="card-heading">
+                <i class="fas fa-map-marker-alt text-purple"></i>
+                Quick Facts
+              </h3>
+              <ul class="facts-list">
+                <li>
+                  <span class="fact-label">Location:</span>
+                  <span class="fact-value">Telangana, India</span>
+                </li>
+                <li>
+                  <span class="fact-label">Education:</span>
+                  <span class="fact-value">B.Tech (Computer Science)</span>
+                </li>
+                <li>
+                  <span class="fact-label">Academic Year:</span>
+                  <span class="fact-value">2nd Year Undergraduate</span>
+                </li>
+                <li>
+                  <span class="fact-label">GitHub Handle:</span>
+                  <span class="fact-value font-mono">@inomallesh</span>
+                </li>
+                <li>
+                  <span class="fact-label">Primary Stack:</span>
+                  <span class="fact-value">Python, JS, C, OpenCV</span>
+                </li>
+                <li>
+                  <span class="fact-label">Club & Community:</span>
+                  <span class="fact-value">AIMCLUB Contributor</span>
+                </li>
+              </ul>
+              <div class="card-footer-cta">
+                <a href="mailto:inomallesh@gmail.com" class="btn btn-outline btn-full">
+                  <i class="fas fa-envelope"></i>
+                  <span>inomallesh@gmail.com</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <!-- Skills Section -->
-    <section id="skills" class="skills">
-        <div class="container">
-            <h2 class="section-title">Skills</h2>
-            <div class="skills-grid">
-                <div class="skill-card">
-                    <div class="skill-icon">
-                        <i class="fab fa-html5"></i>
-                    </div>
-                    <h3>HTML5</h3>
-                    <p>Semantic markup and modern web standards</p>
-                </div>
-                <div class="skill-card">
-                    <div class="skill-icon">
-                        <i class="fab fa-css3-alt"></i>
-                    </div>
-                    <h3>CSS3</h3>
-                    <p>Responsive design and animations</p>
-                </div>
-                <div class="skill-card">
-                    <div class="skill-icon">
-                        <i class="fab fa-js-square"></i>
-                    </div>
-                    <h3>JavaScript</h3>
-                    <p>Interactive web applications</p>
-                </div>
-                <div class="skill-card">
-                    <div class="skill-icon">
-                        <i class="fab fa-python"></i>
-                    </div>
-                    <h3>Python</h3>
-                    <p>Data structures and algorithms</p>
-                </div>
-                <div class="skill-card">
-                    <div class="skill-icon">
-                        <i class="fab fa-java"></i>
-                    </div>
-                    <h3>Java</h3>
-                    <p>Object-oriented programming</p>
-                </div>
-                <div class="skill-card">
-                    <div class="skill-icon">
-                        <i class="fas fa-code"></i>
-                    </div>
-                    <h3>C Programming</h3>
-                    <p>System programming fundamentals</p>
-                </div>
-                <div class="skill-card">
-                    <div class="skill-icon">
-                        <i class="fab fa-git-alt"></i>
-                    </div>
-                    <h3>Git</h3>
-                    <p>Version control and collaboration</p>
-                </div>
-                <div class="skill-card">
-                    <div class="skill-icon">
-                        <i class="fas fa-database"></i>
-                    </div>
-                    <h3>SQL</h3>
-                    <p>Database management</p>
-                </div>
-            </div>
+    <!-- Core Focus Areas -->
+    <section id="focus" class="section focus-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-kicker">02 / What I Do</span>
+          <h2 class="section-title">Core Disciplines & Domains</h2>
+          <p class="section-subtitle">The primary domains where I design, implement, and experiment with software.</p>
         </div>
+
+        <div class="focus-cards-grid">
+          <div class="glass-card focus-card">
+            <div class="focus-icon-wrap bg-cyan-glow">
+              <i class="fas fa-eye"></i>
+            </div>
+            <h3 class="focus-title">Computer Vision & AI</h3>
+            <p class="focus-desc">
+              Developing non-contact human-computer interfaces, 21-landmark hand gesture control systems, deep learning classification pipelines, and autonomous agent workflows.
+            </p>
+            <ul class="focus-list">
+              <li><i class="fas fa-check"></i> MediaPipe 3D Landmark Tracking</li>
+              <li><i class="fas fa-check"></i> OpenCV Real-Time Frame Processing</li>
+              <li><i class="fas fa-check"></i> Autonomous Agent Workflows (AgenticAI)</li>
+              <li><i class="fas fa-check"></i> Deep Learning Breed Recognition</li>
+            </ul>
+          </div>
+
+          <div class="glass-card focus-card">
+            <div class="focus-icon-wrap bg-purple-glow">
+              <i class="fas fa-vr-cardboard"></i>
+            </div>
+            <h3 class="focus-title">Simulations & Robotics</h3>
+            <p class="focus-desc">
+              Modeling physical dynamics and vehicle kinematics in code. Crafting interactive simulations for drones, autonomous driving steering algorithms, and multi-cable robotic suspension.
+            </p>
+            <ul class="focus-list">
+              <li><i class="fas fa-check"></i> Quadcopter Physics & Telemetry Engine</li>
+              <li><i class="fas fa-check"></i> 2D Autonomous Vehicle Kinematics</li>
+              <li><i class="fas fa-check"></i> Spidercam Tension & Motion Vectors</li>
+              <li><i class="fas fa-check"></i> IoT Smart Appliance Controller</li>
+            </ul>
+          </div>
+
+          <div class="glass-card focus-card">
+            <div class="focus-icon-wrap bg-emerald-glow">
+              <i class="fas fa-code"></i>
+            </div>
+            <h3 class="focus-title">Full-Stack & Systems</h3>
+            <p class="focus-desc">
+              Building interactive, accessible web products and systems software. From algorithm visualization suites to gamified learning portals and secure financial logic.
+            </p>
+            <ul class="focus-list">
+              <li><i class="fas fa-check"></i> Interactive Algorithm Visualizers</li>
+              <li><i class="fas fa-check"></i> Edusphere Gamified Learning</li>
+              <li><i class="fas fa-check"></i> Secure Banking Portals & Transaction Logics</li>
+              <li><i class="fas fa-check"></i> Clean, Performant Vanilla & Modern JS</li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Projects Section -->
-    <section id="projects" class="projects">
-        <div class="container">
-            <h2 class="section-title">Projects</h2>
-            <div class="projects-grid">
-                <div class="project-card">
-                    <div class="project-image">
-                        <i class="fas fa-laptop-code"></i>
-                    </div>
-                    <div class="project-content">
-                        <h3>Personal Portfolio Website</h3>
-                        <p>A responsive portfolio website built with HTML, CSS, and JavaScript featuring smooth animations and modern design.</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">HTML</span>
-                            <span class="tech-tag">CSS</span>
-                            <span class="tech-tag">JavaScript</span>
-                        </div>
-                        <a href="#" class="project-link">
-                            <i class="fab fa-github"></i> View on GitHub
-                        </a>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <div class="project-image">
-                        <i class="fas fa-calculator"></i>
-                    </div>
-                    <div class="project-content">
-                        <h3>Calculator App</h3>
-                        <p>A fully functional calculator application with a clean interface and support for basic mathematical operations.</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">HTML</span>
-                            <span class="tech-tag">CSS</span>
-                            <span class="tech-tag">JavaScript</span>
-                        </div>
-                        <a href="#" class="project-link">
-                            <i class="fab fa-github"></i> View on GitHub
-                        </a>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <div class="project-image">
-                        <i class="fas fa-tasks"></i>
-                    </div>
-                    <div class="project-content">
-                        <h3>Todo List Manager</h3>
-                        <p>A task management application that allows users to add, edit, delete, and mark tasks as complete with local storage.</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">HTML</span>
-                            <span class="tech-tag">CSS</span>
-                            <span class="tech-tag">JavaScript</span>
-                        </div>
-                        <a href="#" class="project-link">
-                            <i class="fab fa-github"></i> View on GitHub
-                        </a>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <div class="project-image">
-                        <i class="fas fa-weather-sun"></i>
-                    </div>
-                    <div class="project-content">
-                        <h3>Weather App</h3>
-                        <p>A weather application that fetches real-time weather data using APIs and displays it in a beautiful interface.</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">HTML</span>
-                            <span class="tech-tag">CSS</span>
-                            <span class="tech-tag">JavaScript</span>
-                            <span class="tech-tag">API</span>
-                        </div>
-                        <a href="#" class="project-link">
-                            <i class="fab fa-github"></i> View on GitHub
-                        </a>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <div class="project-image">
-                        <i class="fas fa-gamepad"></i>
-                    </div>
-                    <div class="project-content">
-                        <h3>Snake Game</h3>
-                        <p>A classic Snake game implementation with score tracking, game over detection, and smooth gameplay mechanics.</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">HTML</span>
-                            <span class="tech-tag">CSS</span>
-                            <span class="tech-tag">JavaScript</span>
-                        </div>
-                        <a href="#" class="project-link">
-                            <i class="fab fa-github"></i> View on GitHub
-                        </a>
-                    </div>
-                </div>
-            </div>
+    <section id="projects" class="section projects-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-kicker">03 / Portfolio</span>
+          <h2 class="section-title">Featured Projects & Repositories</h2>
+          <p class="section-subtitle">Real code from my GitHub repositories solving computer vision, simulation, and web problems.</p>
         </div>
+
+        <!-- Filter Controls -->
+        <div class="project-filters" id="projectFilters" role="tablist">
+          <button class="filter-btn active" data-filter="all" role="tab" aria-selected="true">All Projects</button>
+          <button class="filter-btn" data-filter="ai" role="tab" aria-selected="false">AI & Vision</button>
+          <button class="filter-btn" data-filter="simulation" role="tab" aria-selected="false">Simulations & Robotics</button>
+          <button class="filter-btn" data-filter="web" role="tab" aria-selected="false">Web & Full-Stack</button>
+          <button class="filter-btn" data-filter="systems" role="tab" aria-selected="false">Core CS</button>
+        </div>
+
+        <!-- Projects Grid -->
+        <div class="projects-grid" id="projectsGrid">
+
+          <!-- Project 1: AgenticAI -->
+          <article class="project-card glass-card" data-category="ai">
+            <div class="project-card-header">
+              <span class="project-type-badge badge-ai">
+                <i class="fas fa-robot"></i> AI & Agents
+              </span>
+              <a href="https://github.com/inomallesh/AgenticAI" target="_blank" rel="noopener noreferrer" class="repo-icon-link" title="Open GitHub Repository">
+                <i class="fab fa-github"></i>
+              </a>
+            </div>
+            <div class="project-card-body">
+              <h3 class="project-title">AgenticAI</h3>
+              <p class="project-desc">
+                An autonomous artificial intelligence framework implementing agentic reasoning workflows, tool execution loops, and task orchestration patterns for automated problem-solving.
+              </p>
+              <div class="project-features">
+                <span><i class="fas fa-check"></i> Multi-step task reasoning</span>
+                <span><i class="fas fa-check"></i> Tool augmentation loops</span>
+              </div>
+            </div>
+            <div class="project-card-footer">
+              <div class="tech-tags">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">Agentic AI</span>
+                <span class="tech-tag">LLMs</span>
+                <span class="tech-tag">Automation</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/inomallesh/AgenticAI" target="_blank" rel="noopener noreferrer" class="btn-link">
+                  <span>View Repository</span>
+                  <i class="fas fa-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2: Gesture Nokia Snake -->
+          <article class="project-card glass-card" data-category="ai">
+            <div class="project-card-header">
+              <span class="project-type-badge badge-cv">
+                <i class="fas fa-hand-paper"></i> Computer Vision
+              </span>
+              <a href="https://github.com/inomallesh/nokia-snake-gesture-control" target="_blank" rel="noopener noreferrer" class="repo-icon-link" title="Open GitHub Repository">
+                <i class="fab fa-github"></i>
+              </a>
+            </div>
+            <div class="project-card-body">
+              <h3 class="project-title">Nokia Snake Gesture Control</h3>
+              <p class="project-desc">
+                A touchless gaming experience combining the nostalgic Nokia Snake game with real-time computer vision. Translates webcam hand position and finger gestures into directional game control.
+              </p>
+              <div class="project-features">
+                <span><i class="fas fa-check"></i> Real-time landmark tracking</span>
+                <span><i class="fas fa-check"></i> Zero-latency gesture mapping</span>
+              </div>
+            </div>
+            <div class="project-card-footer">
+              <div class="tech-tags">
+                <span class="tech-tag">OpenCV</span>
+                <span class="tech-tag">MediaPipe</span>
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">Pygame</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/inomallesh/nokia-snake-gesture-control" target="_blank" rel="noopener noreferrer" class="btn-link">
+                  <span>View Repository</span>
+                  <i class="fas fa-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3: Drone Simulator -->
+          <article class="project-card glass-card" data-category="simulation">
+            <div class="project-card-header">
+              <span class="project-type-badge badge-sim">
+                <i class="fas fa-wind"></i> Flight Physics
+              </span>
+              <a href="https://github.com/inomallesh/drone-simulator" target="_blank" rel="noopener noreferrer" class="repo-icon-link" title="Open GitHub Repository">
+                <i class="fab fa-github"></i>
+              </a>
+            </div>
+            <div class="project-card-body">
+              <h3 class="project-title">Drone Flight Simulator</h3>
+              <p class="project-desc">
+                Interactive quadcopter physics simulator modeling 6-degrees-of-freedom flight dynamics, rotor thrust, gravity vectors, telemetry gauges, and obstacle navigation.
+              </p>
+              <div class="project-features">
+                <span><i class="fas fa-check"></i> Vector-based thrust physics</span>
+                <span><i class="fas fa-check"></i> Live HUD & telemetry telemetry</span>
+              </div>
+            </div>
+            <div class="project-card-footer">
+              <div class="tech-tags">
+                <span class="tech-tag">HTML5 Canvas</span>
+                <span class="tech-tag">JavaScript</span>
+                <span class="tech-tag">Physics Engine</span>
+                <span class="tech-tag">Telemetry</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/inomallesh/drone-simulator" target="_blank" rel="noopener noreferrer" class="btn-link">
+                  <span>View Repository</span>
+                  <i class="fas fa-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 4: Car Simulator -->
+          <article class="project-card glass-card" data-category="simulation">
+            <div class="project-card-header">
+              <span class="project-type-badge badge-sim">
+                <i class="fas fa-car"></i> Kinematics
+              </span>
+              <a href="https://github.com/inomallesh/car-simulator" target="_blank" rel="noopener noreferrer" class="repo-icon-link" title="Open GitHub Repository">
+                <i class="fab fa-github"></i>
+              </a>
+            </div>
+            <div class="project-card-body">
+              <h3 class="project-title">Autonomous Car Simulator</h3>
+              <p class="project-desc">
+                Interactive vehicle kinematics simulation featuring realistic steering geometry (Ackermann approximation), friction, obstacle avoidance raycasting, and velocity vectors.
+              </p>
+              <div class="project-features">
+                <span><i class="fas fa-check"></i> Realistic drift & traction physics</span>
+                <span><i class="fas fa-check"></i> Raycast sensor visualization</span>
+              </div>
+            </div>
+            <div class="project-card-footer">
+              <div class="tech-tags">
+                <span class="tech-tag">JavaScript</span>
+                <span class="tech-tag">Canvas 2D</span>
+                <span class="tech-tag">Kinematics</span>
+                <span class="tech-tag">Sensors</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/inomallesh/car-simulator" target="_blank" rel="noopener noreferrer" class="btn-link">
+                  <span>View Repository</span>
+                  <i class="fas fa-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 5: Hand Tracking Project -->
+          <article class="project-card glass-card" data-category="ai">
+            <div class="project-card-header">
+              <span class="project-type-badge badge-cv">
+                <i class="fas fa-hand-sparkles"></i> Computer Vision
+              </span>
+              <a href="https://github.com/inomallesh/HandTrackingProject" target="_blank" rel="noopener noreferrer" class="repo-icon-link" title="Open GitHub Repository">
+                <i class="fab fa-github"></i>
+              </a>
+            </div>
+            <div class="project-card-body">
+              <h3 class="project-title">Hand Tracking Landmark Engine</h3>
+              <p class="project-desc">
+                A high-performance framework tracking 21 spatial landmarks on human hands at high frame rates. Built as a reusable module for spatial computing, virtual drawing, and gesture triggers.
+              </p>
+              <div class="project-features">
+                <span><i class="fas fa-check"></i> 21 3D hand keypoints</span>
+                <span><i class="fas fa-check"></i> Modular tracking architecture</span>
+              </div>
+            </div>
+            <div class="project-card-footer">
+              <div class="tech-tags">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">MediaPipe</span>
+                <span class="tech-tag">OpenCV</span>
+                <span class="tech-tag">Spatial HCI</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/inomallesh/HandTrackingProject" target="_blank" rel="noopener noreferrer" class="btn-link">
+                  <span>View Repository</span>
+                  <i class="fas fa-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 6: Breed Detection -->
+          <article class="project-card glass-card" data-category="ai">
+            <div class="project-card-header">
+              <span class="project-type-badge badge-ai">
+                <i class="fas fa-dog"></i> Deep Learning
+              </span>
+              <a href="https://github.com/inomallesh/Breed-Detection" target="_blank" rel="noopener noreferrer" class="repo-icon-link" title="Open GitHub Repository">
+                <i class="fab fa-github"></i>
+              </a>
+            </div>
+            <div class="project-card-body">
+              <h3 class="project-title">Animal Breed Detection</h3>
+              <p class="project-desc">
+                Deep neural network image classification pipeline capable of classifying distinct canine and animal breeds from camera feeds and images with classification probabilities.
+              </p>
+              <div class="project-features">
+                <span><i class="fas fa-check"></i> Convolutional feature extractors</span>
+                <span><i class="fas fa-check"></i> Multi-class confidence score</span>
+              </div>
+            </div>
+            <div class="project-card-footer">
+              <div class="tech-tags">
+                <span class="tech-tag">Deep Learning</span>
+                <span class="tech-tag">PyTorch / TF</span>
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">Image Classification</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/inomallesh/Breed-Detection" target="_blank" rel="noopener noreferrer" class="btn-link">
+                  <span>View Repository</span>
+                  <i class="fas fa-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 7: Spidercam Robotics -->
+          <article class="project-card glass-card" data-category="simulation">
+            <div class="project-card-header">
+              <span class="project-type-badge badge-sim">
+                <i class="fas fa-spider"></i> Robotics & IoT
+              </span>
+              <a href="https://github.com/inomallesh/spidercam" target="_blank" rel="noopener noreferrer" class="repo-icon-link" title="Open GitHub Repository">
+                <i class="fab fa-github"></i>
+              </a>
+            </div>
+            <div class="project-card-body">
+              <h3 class="project-title">Spidercam Kinematic System</h3>
+              <p class="project-desc">
+                Cable-driven parallel robotics simulation modeling suspended camera rigs. Calculates multi-point cable tensions, coordinates, and smooth 3D trajectory interpolation.
+              </p>
+              <div class="project-features">
+                <span><i class="fas fa-check"></i> 4-cable vector tension math</span>
+                <span><i class="fas fa-check"></i> 3D arena spatial interpolation</span>
+              </div>
+            </div>
+            <div class="project-card-footer">
+              <div class="tech-tags">
+                <span class="tech-tag">Robotics</span>
+                <span class="tech-tag">Kinematics</span>
+                <span class="tech-tag">JavaScript</span>
+                <span class="tech-tag">Hardware Math</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/inomallesh/spidercam" target="_blank" rel="noopener noreferrer" class="btn-link">
+                  <span>View Repository</span>
+                  <i class="fas fa-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 8: Edusphere -->
+          <article class="project-card glass-card" data-category="web">
+            <div class="project-card-header">
+              <span class="project-type-badge badge-web">
+                <i class="fas fa-graduation-cap"></i> EdTech
+              </span>
+              <a href="https://github.com/inomallesh/Edusphere" target="_blank" rel="noopener noreferrer" class="repo-icon-link" title="Open GitHub Repository">
+                <i class="fab fa-github"></i>
+              </a>
+            </div>
+            <div class="project-card-body">
+              <h3 class="project-title">Edusphere Gamified Platform</h3>
+              <p class="project-desc">
+                An engaging educational web module offering personalized learning paths, interactive exercises, progress metrics, and gamified achievement systems for students.
+              </p>
+              <div class="project-features">
+                <span><i class="fas fa-check"></i> Interactive progress tracking</span>
+                <span><i class="fas fa-check"></i> Gamified study mechanics</span>
+              </div>
+            </div>
+            <div class="project-card-footer">
+              <div class="tech-tags">
+                <span class="tech-tag">HTML5 / CSS3</span>
+                <span class="tech-tag">JavaScript</span>
+                <span class="tech-tag">UI/UX</span>
+                <span class="tech-tag">Gamification</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/inomallesh/Edusphere" target="_blank" rel="noopener noreferrer" class="btn-link">
+                  <span>View Repository</span>
+                  <i class="fas fa-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 9: AlgoVerse Interactive Lab -->
+          <article class="project-card glass-card" data-category="web">
+            <div class="project-card-header">
+              <span class="project-type-badge badge-web">
+                <i class="fas fa-project-diagram"></i> Interactive Tool
+              </span>
+              <a href="algoverse/index.html" class="repo-icon-link" title="Open AlgoVerse Live Lab">
+                <i class="fas fa-play"></i>
+              </a>
+            </div>
+            <div class="project-card-body">
+              <h3 class="project-title">AlgoVerse — Algorithm Lab</h3>
+              <p class="project-desc">
+                Interactive learning suite visualizing sorting algorithms (Bubble, Quick, Merge), binary search, linked lists, stacks, queues, and tree traversals with audio frequency synthesis.
+              </p>
+              <div class="project-features">
+                <span><i class="fas fa-check"></i> Real-time step-by-step playback</span>
+                <span><i class="fas fa-check"></i> Web Audio API sound synthesis</span>
+              </div>
+            </div>
+            <div class="project-card-footer">
+              <div class="tech-tags">
+                <span class="tech-tag">Data Structures</span>
+                <span class="tech-tag">Algorithms</span>
+                <span class="tech-tag">Audio FX</span>
+                <span class="tech-tag">Vanilla JS</span>
+              </div>
+              <div class="project-links">
+                <a href="algoverse/index.html" class="btn-link">
+                  <span>Launch Interactive Lab</span>
+                  <i class="fas fa-external-link-alt"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 10: Online Banking System -->
+          <article class="project-card glass-card" data-category="systems">
+            <div class="project-card-header">
+              <span class="project-type-badge badge-sys">
+                <i class="fas fa-shield-alt"></i> Systems & Backend
+              </span>
+              <a href="https://github.com/inomallesh/OnlineBankingSystem" target="_blank" rel="noopener noreferrer" class="repo-icon-link" title="Open GitHub Repository">
+                <i class="fab fa-github"></i>
+              </a>
+            </div>
+            <div class="project-card-body">
+              <h3 class="project-title">Online Banking Core</h3>
+              <p class="project-desc">
+                A robust banking management application handling user authentication, atomic fund transfers, transaction histories, and balance verification with structured backend logic.
+              </p>
+              <div class="project-features">
+                <span><i class="fas fa-check"></i> Secure authentication workflow</span>
+                <span><i class="fas fa-check"></i> Transaction logging & ledgers</span>
+              </div>
+            </div>
+            <div class="project-card-footer">
+              <div class="tech-tags">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">SQL</span>
+                <span class="tech-tag">Security Logic</span>
+                <span class="tech-tag">Database</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/inomallesh/OnlineBankingSystem" target="_blank" rel="noopener noreferrer" class="btn-link">
+                  <span>View Repository</span>
+                  <i class="fas fa-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 11: Home Automation IoT -->
+          <article class="project-card glass-card" data-category="simulation">
+            <div class="project-card-header">
+              <span class="project-type-badge badge-sim">
+                <i class="fas fa-home"></i> IoT Automation
+              </span>
+              <a href="https://github.com/inomallesh/HomeAutomation" target="_blank" rel="noopener noreferrer" class="repo-icon-link" title="Open GitHub Repository">
+                <i class="fab fa-github"></i>
+              </a>
+            </div>
+            <div class="project-card-body">
+              <h3 class="project-title">Home Automation IoT Suite</h3>
+              <p class="project-desc">
+                Smart automation dashboard interface for microcontrollers and IoT appliances, enabling wireless appliance triggering, state status monitoring, and energy schedules.
+              </p>
+              <div class="project-features">
+                <span><i class="fas fa-check"></i> Real-time device toggle controls</span>
+                <span><i class="fas fa-check"></i> Telemetry & sensor logging</span>
+              </div>
+            </div>
+            <div class="project-card-footer">
+              <div class="tech-tags">
+                <span class="tech-tag">IoT</span>
+                <span class="tech-tag">Microcontrollers</span>
+                <span class="tech-tag">HTML/CSS/JS</span>
+                <span class="tech-tag">Automation</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/inomallesh/HomeAutomation" target="_blank" rel="noopener noreferrer" class="btn-link">
+                  <span>View Repository</span>
+                  <i class="fas fa-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 12: Data Structures & OOPs Core -->
+          <article class="project-card glass-card" data-category="systems">
+            <div class="project-card-header">
+              <span class="project-type-badge badge-sys">
+                <i class="fas fa-cubes"></i> CS Foundations
+              </span>
+              <a href="https://github.com/inomallesh/Data-Structures" target="_blank" rel="noopener noreferrer" class="repo-icon-link" title="Open GitHub Repository">
+                <i class="fab fa-github"></i>
+              </a>
+            </div>
+            <div class="project-card-body">
+              <h3 class="project-title">Data Structures & OOPs Repository</h3>
+              <p class="project-desc">
+                Comprehensive reference implementations of fundamental data structures, memory allocation in C, and object-oriented design patterns across C, Java, and Python.
+              </p>
+              <div class="project-features">
+                <span><i class="fas fa-check"></i> Trees, graphs, heaps & queues</span>
+                <span><i class="fas fa-check"></i> Memory efficiency benchmarks</span>
+              </div>
+            </div>
+            <div class="project-card-footer">
+              <div class="tech-tags">
+                <span class="tech-tag">C Language</span>
+                <span class="tech-tag">Java</span>
+                <span class="tech-tag">Data Structures</span>
+                <span class="tech-tag">Algorithms</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/inomallesh/Data-Structures" target="_blank" rel="noopener noreferrer" class="btn-link">
+                  <span>View Repository</span>
+                  <i class="fas fa-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Interactive Terminal Playground Section -->
+    <section id="terminal" class="section terminal-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-kicker">04 / Developer CLI</span>
+          <h2 class="section-title">Interactive Terminal Sandbox</h2>
+          <p class="section-subtitle">A live terminal interface to query my profile, view skills, run mini tests, and execute commands.</p>
+        </div>
+
+        <div class="terminal-wrapper glass-card">
+          <div class="terminal-bar">
+            <div class="terminal-buttons">
+              <span class="mac-dot red"></span>
+              <span class="mac-dot yellow"></span>
+              <span class="mac-dot green"></span>
+            </div>
+            <div class="terminal-title">mallesh@developer:~/portfolio (zsh)</div>
+            <div class="terminal-actions">
+              <button class="terminal-clear-btn" id="terminalClearBtn" title="Clear terminal screen">
+                <i class="fas fa-eraser"></i> Clear
+              </button>
+            </div>
+          </div>
+          <div class="terminal-screen" id="terminalScreen">
+            <div class="terminal-output" id="terminalOutput">
+              <p class="term-line text-dim">Mallesh Interactive Shell v2.4 (Type <span class="term-command-hint">help</span> for available commands)</p>
+              <p class="term-line">Welcome! Type <span class="term-highlight">projects</span>, <span class="term-highlight">skills</span>, <span class="term-highlight">vision</span>, or <span class="term-highlight">contact</span> to query my profile.</p>
+            </div>
+            <div class="terminal-prompt-line">
+              <span class="prompt-user">mallesh@portfolio</span><span class="prompt-symbol">:~$</span>
+              <input type="text" id="terminalInput" class="terminal-input" placeholder="try typing 'help'..." autocomplete="off" spellcheck="false">
+            </div>
+          </div>
+          <div class="terminal-quick-cmds">
+            <span class="quick-label">Quick Commands:</span>
+            <button class="quick-cmd-btn" data-cmd="help">help</button>
+            <button class="quick-cmd-btn" data-cmd="whoami">whoami</button>
+            <button class="quick-cmd-btn" data-cmd="projects">projects</button>
+            <button class="quick-cmd-btn" data-cmd="skills">skills</button>
+            <button class="quick-cmd-btn" data-cmd="simulations">simulations</button>
+            <button class="quick-cmd-btn" data-cmd="github">github</button>
+            <button class="quick-cmd-btn" data-cmd="contact">contact</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section skills-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-kicker">05 / Skills Matrix</span>
+          <h2 class="section-title">Technical Toolset & Competencies</h2>
+          <p class="section-subtitle">Languages, frameworks, computer vision packages, and development tools I work with.</p>
+        </div>
+
+        <div class="skills-grid">
+          <!-- Category 1: AI & Vision -->
+          <div class="glass-card skill-group">
+            <div class="skill-group-header">
+              <div class="skill-group-icon bg-cyan-glow">
+                <i class="fas fa-brain"></i>
+              </div>
+              <h3>AI & Computer Vision</h3>
+            </div>
+            <div class="skill-chips">
+              <div class="skill-chip">
+                <i class="fas fa-eye text-cyan"></i>
+                <div class="skill-info">
+                  <span class="skill-name">MediaPipe</span>
+                  <span class="skill-level">3D Landmarks & Gestures</span>
+                </div>
+              </div>
+              <div class="skill-chip">
+                <i class="fas fa-camera text-cyan"></i>
+                <div class="skill-info">
+                  <span class="skill-name">OpenCV</span>
+                  <span class="skill-level">Image Processing & HCI</span>
+                </div>
+              </div>
+              <div class="skill-chip">
+                <i class="fas fa-robot text-purple"></i>
+                <div class="skill-info">
+                  <span class="skill-name">Agentic AI</span>
+                  <span class="skill-level">Workflows & Tool Use</span>
+                </div>
+              </div>
+              <div class="skill-chip">
+                <i class="fas fa-network-wired text-purple"></i>
+                <div class="skill-info">
+                  <span class="skill-name">Deep Learning</span>
+                  <span class="skill-level">CNNs & Classification</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Category 2: Programming Languages -->
+          <div class="glass-card skill-group">
+            <div class="skill-group-header">
+              <div class="skill-group-icon bg-purple-glow">
+                <i class="fas fa-code"></i>
+              </div>
+              <h3>Programming Languages</h3>
+            </div>
+            <div class="skill-chips">
+              <div class="skill-chip">
+                <i class="fab fa-python text-yellow"></i>
+                <div class="skill-info">
+                  <span class="skill-name">Python</span>
+                  <span class="skill-level">Primary AI / Scripting</span>
+                </div>
+              </div>
+              <div class="skill-chip">
+                <i class="fab fa-js-square text-yellow"></i>
+                <div class="skill-info">
+                  <span class="skill-name">JavaScript (ES6+)</span>
+                  <span class="skill-level">Interactive DOM & Canvas</span>
+                </div>
+              </div>
+              <div class="skill-chip">
+                <i class="fas fa-terminal text-blue"></i>
+                <div class="skill-info">
+                  <span class="skill-name">C Language</span>
+                  <span class="skill-level">Data Structures & Memory</span>
+                </div>
+              </div>
+              <div class="skill-chip">
+                <i class="fab fa-java text-red"></i>
+                <div class="skill-info">
+                  <span class="skill-name">Java</span>
+                  <span class="skill-level">OOP Architecture</span>
+                </div>
+              </div>
+              <div class="skill-chip">
+                <i class="fas fa-database text-blue"></i>
+                <div class="skill-info">
+                  <span class="skill-name">SQL</span>
+                  <span class="skill-level">Relational Schemas</span>
+                </div>
+              </div>
+              <div class="skill-chip">
+                <i class="fab fa-html5 text-orange"></i>
+                <div class="skill-info">
+                  <span class="skill-name">HTML5 / CSS3</span>
+                  <span class="skill-level">Modern Semantic Layouts</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Category 3: Simulations & Robotics -->
+          <div class="glass-card skill-group">
+            <div class="skill-group-header">
+              <div class="skill-group-icon bg-emerald-glow">
+                <i class="fas fa-cogs"></i>
+              </div>
+              <h3>Simulations & IoT</h3>
+            </div>
+            <div class="skill-chips">
+              <div class="skill-chip">
+                <i class="fas fa-plane-departure text-emerald"></i>
+                <div class="skill-info">
+                  <span class="skill-name">Physics Simulation</span>
+                  <span class="skill-level">Vector Thrusters & Gravity</span>
+                </div>
+              </div>
+              <div class="skill-chip">
+                <i class="fas fa-microchip text-emerald"></i>
+                <div class="skill-info">
+                  <span class="skill-name">IoT Architecture</span>
+                  <span class="skill-level">Home Automation & Relays</span>
+                </div>
+              </div>
+              <div class="skill-chip">
+                <i class="fas fa-drafting-compass text-emerald"></i>
+                <div class="skill-info">
+                  <span class="skill-name">Kinematic Modeling</span>
+                  <span class="skill-level">Steering & Cable Tension</span>
+                </div>
+              </div>
+              <div class="skill-chip">
+                <i class="fas fa-paint-brush text-emerald"></i>
+                <div class="skill-info">
+                  <span class="skill-name">HTML5 Canvas 2D</span>
+                  <span class="skill-level">High-Performance Rendering</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Category 4: Tools & Workflow -->
+          <div class="glass-card skill-group">
+            <div class="skill-group-header">
+              <div class="skill-group-icon bg-cyan-glow">
+                <i class="fas fa-tools"></i>
+              </div>
+              <h3>Tools & Workflow</h3>
+            </div>
+            <div class="skill-chips">
+              <div class="skill-chip">
+                <i class="fab fa-git-alt text-red"></i>
+                <div class="skill-info">
+                  <span class="skill-name">Git & GitHub</span>
+                  <span class="skill-level">Version Control & PRs</span>
+                </div>
+              </div>
+              <div class="skill-chip">
+                <i class="fas fa-bolt text-purple"></i>
+                <div class="skill-info">
+                  <span class="skill-name">n8n Automation</span>
+                  <span class="skill-level">Workflow Orchestration</span>
+                </div>
+              </div>
+              <div class="skill-chip">
+                <i class="fas fa-laptop-code text-cyan"></i>
+                <div class="skill-info">
+                  <span class="skill-name">VS Code & CLI</span>
+                  <span class="skill-level">Modern Dev Environment</span>
+                </div>
+              </div>
+              <div class="skill-chip">
+                <i class="fas fa-cloud text-blue"></i>
+                <div class="skill-info">
+                  <span class="skill-name">RESTful APIs</span>
+                  <span class="skill-level">Data Integration & JSON</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <h2 class="section-title">Get In Touch</h2>
-            <div class="contact-content">
-                <div class="contact-info">
-                    <h3>Let's Connect!</h3>
-                    <p>I'm always interested in new opportunities and collaborations. Feel free to reach out!</p>
-                    <div class="contact-links">
-                        <a href="mailto:inomallesh@gmail.com" class="contact-link">
-                            <i class="fas fa-envelope"></i>
-                            <span>inomallesh@gmail.com</span>
-                        </a>
-                        <a href="https://linkedin.com/in/inomallesh" class="contact-link" target="_blank">
-                            <i class="fab fa-linkedin"></i>
-                            <span>LinkedIn Profile</span>
-                        </a>
-                        <a href="https://github.com/inomallesh" class="contact-link" target="_blank">
-                            <i class="fab fa-github"></i>
-                            <span>GitHub Profile</span>
-                        </a>
-                    </div>
-                </div>
-                <form class="contact-form" id="contactForm">
-                    <div class="form-group">
-                        <input type="text" id="name" name="name" placeholder="Your Name" required>
-                    </div>
-                    <div class="form-group">
-                        <input type="email" id="email" name="email" placeholder="Your Email" required>
-                    </div>
-                    <div class="form-group">
-                        <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Send Message</button>
-                </form>
-            </div>
+    <section id="contact" class="section contact-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-kicker">06 / Connect</span>
+          <h2 class="section-title">Let's Build Something Together</h2>
+          <p class="section-subtitle">Interested in collaborating on AI, Computer Vision, or software development? Reach out!</p>
         </div>
+
+        <div class="contact-grid">
+          <!-- Contact Info Cards -->
+          <div class="contact-info-col">
+            <div class="glass-card contact-card">
+              <h3>Direct Channels</h3>
+              <p>Feel free to reach out via email or connect with me on GitHub and LinkedIn.</p>
+
+              <div class="contact-methods">
+                <div class="contact-method-item">
+                  <div class="method-icon bg-cyan-glow">
+                    <i class="fas fa-envelope"></i>
+                  </div>
+                  <div class="method-details">
+                    <span class="method-title">Email</span>
+                    <a href="mailto:inomallesh@gmail.com" class="method-value">inomallesh@gmail.com</a>
+                  </div>
+                  <button class="btn-copy-email" id="copyEmailBtn" title="Copy email address" aria-label="Copy Email">
+                    <i class="fas fa-copy"></i>
+                  </button>
+                </div>
+
+                <div class="contact-method-item">
+                  <div class="method-icon bg-purple-glow">
+                    <i class="fab fa-github"></i>
+                  </div>
+                  <div class="method-details">
+                    <span class="method-title">GitHub</span>
+                    <a href="https://github.com/inomallesh" target="_blank" rel="noopener noreferrer" class="method-value">github.com/inomallesh</a>
+                  </div>
+                </div>
+
+                <div class="contact-method-item">
+                  <div class="method-icon bg-emerald-glow">
+                    <i class="fab fa-linkedin-in"></i>
+                  </div>
+                  <div class="method-details">
+                    <span class="method-title">LinkedIn</span>
+                    <a href="https://linkedin.com/in/inomallesh" target="_blank" rel="noopener noreferrer" class="method-value">linkedin.com/in/inomallesh</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="availability-callout">
+                <div class="callout-indicator"></div>
+                <div>
+                  <h4>Available for Summer/Spring 2025-2026 Opportunities</h4>
+                  <p>Open for AI engineer, Computer Vision intern, and software engineering roles.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Interactive Contact Form -->
+          <div class="contact-form-col">
+            <div class="glass-card form-card">
+              <h3>Send a Message</h3>
+              <form id="contactForm" class="contact-form" novalidate>
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="name">Your Name <span class="required">*</span></label>
+                    <div class="input-wrap">
+                      <i class="fas fa-user input-icon"></i>
+                      <input type="text" id="name" name="name" placeholder="Alex Morgan" required>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="email">Your Email <span class="required">*</span></label>
+                    <div class="input-wrap">
+                      <i class="fas fa-at input-icon"></i>
+                      <input type="email" id="email" name="email" placeholder="alex@company.com" required>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="subject">Subject</label>
+                  <div class="input-wrap">
+                    <i class="fas fa-tag input-icon"></i>
+                    <input type="text" id="subject" name="subject" placeholder="Project Collaboration / Internship Opportunity">
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="message">Message <span class="required">*</span></label>
+                  <div class="input-wrap">
+                    <i class="fas fa-comment-alt input-icon icon-textarea"></i>
+                    <textarea id="message" name="message" rows="5" placeholder="Hi Mallesh, I saw your work on Computer Vision and would like to discuss..." required></textarea>
+                  </div>
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-full" id="submitBtn">
+                  <span>Send Message</span>
+                  <i class="fas fa-paper-plane"></i>
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
+  </main>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <p>&copy; 2024 MARIPALLI MALLESH. All rights reserved.</p>
-                <div class="footer-links">
-                    <a href="#home">Home</a>
-                    <a href="#about">About</a>
-                    <a href="#skills">Skills</a>
-                    <a href="#projects">Projects</a>
-                    <a href="#contact">Contact</a>
-                </div>
-            </div>
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-brand">
+        <a href="#hero" class="brand-link">
+          <span class="brand-avatar">MM</span>
+          <span class="brand-name">Maripalli Mallesh</span>
+        </a>
+        <p class="footer-copy">Crafting intelligent machines, computer vision, and dynamic interactive systems.</p>
+      </div>
+
+      <div class="footer-nav">
+        <a href="#about">About</a>
+        <a href="#focus">Focus</a>
+        <a href="#projects">Projects</a>
+        <a href="#terminal">Terminal</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Maripalli Mallesh. Built with precision and passion.</p>
+        <div class="footer-socials">
+          <a href="https://github.com/inomallesh" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
+          <a href="https://linkedin.com/in/inomallesh" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+          <a href="mailto:inomallesh@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
         </div>
-    </footer>
+      </div>
+    </div>
+  </footer>
 
-    <!-- Scroll to Top Button -->
-    <button class="scroll-to-top" id="scrollToTop">
-        <i class="fas fa-arrow-up"></i>
-    </button>
+  <!-- Resume Modal -->
+  <div class="modal-backdrop" id="resumeModal" aria-hidden="true">
+    <div class="modal-content glass-card">
+      <div class="modal-header">
+        <div class="modal-title">
+          <i class="fas fa-file-alt text-cyan"></i>
+          <h3>Maripalli Mallesh — Curriculum Vitae</h3>
+        </div>
+        <button class="modal-close-btn" id="closeModalBtn" aria-label="Close modal">&times;</button>
+      </div>
+      <div class="modal-body">
+        <div class="resume-sheet">
+          <div class="resume-sheet-header">
+            <h2>MARIPALLI MALLESH</h2>
+            <p class="resume-sheet-sub">B.Tech in Computer Science | AI & Computer Vision Developer</p>
+            <p class="resume-sheet-links">
+              <span><i class="fas fa-envelope"></i> inomallesh@gmail.com</span> |
+              <span><i class="fab fa-github"></i> github.com/inomallesh</span> |
+              <span><i class="fab fa-linkedin"></i> linkedin.com/in/inomallesh</span>
+            </p>
+          </div>
 
-    <script src="script.js"></script>
+          <div class="resume-section">
+            <h4>ACADEMIC PROFILE</h4>
+            <div class="resume-entry">
+              <div class="entry-title-row">
+                <strong>Bachelor of Technology (B.Tech) — Computer Science</strong>
+                <span class="entry-date">2023 – 2027</span>
+              </div>
+              <p>Key Coursework: Data Structures & Algorithms, Object-Oriented Programming, Computer Vision, Database Management Systems.</p>
+            </div>
+          </div>
+
+          <div class="resume-section">
+            <h4>CORE TECHNICAL EXPERTISE</h4>
+            <ul class="resume-bullet-list">
+              <li><strong>AI & Vision:</strong> MediaPipe 3D Landmark Tracking, OpenCV Real-Time Analysis, Agentic Workflows, CNN Classification.</li>
+              <li><strong>Simulations & IoT:</strong> Physics simulation engines (quadcopter kinematics, vehicle dynamics), Arduino/IoT home automation.</li>
+              <li><strong>Programming:</strong> Python, C, Java, JavaScript (ES6+), SQL, HTML5/CSS3.</li>
+            </ul>
+          </div>
+
+          <div class="resume-section">
+            <h4>HIGHLIGHTED PROJECTS</h4>
+            <div class="resume-entry">
+              <strong>AgenticAI:</strong> Autonomous AI agent framework with multi-step tool execution loops.
+            </div>
+            <div class="resume-entry">
+              <strong>Nokia Snake Gesture Control:</strong> Touchless vision-guided game control via real-time MediaPipe hand landmark tracking.
+            </div>
+            <div class="resume-entry">
+              <strong>Drone Flight Simulator:</strong> Interactive 6-DOF physics quadcopter simulation with live telemetry dashboard.
+            </div>
+            <div class="resume-entry">
+              <strong>AlgoVerse & Edusphere:</strong> Interactive algorithm visualizer and gamified student educational platform.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-primary" id="printResumeBtn">
+          <i class="fas fa-print"></i> Print / Save as PDF
+        </button>
+        <button class="btn btn-secondary" id="closeModalFooterBtn">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification Container -->
+  <div class="toast-container" id="toastContainer" aria-live="polite"></div>
+
+  <!-- Scroll to Top Button -->
+  <button class="scroll-to-top" id="scrollTopBtn" aria-label="Scroll to top" title="Scroll to top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <!-- Main JavaScript File -->
+  <script src="script.js"></script>
 </body>
 </html>
